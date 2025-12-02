@@ -1,0 +1,103 @@
+/* Estilo general */
+body {
+    background-color: #0b0e0d;
+    font-family: "Courier New", monospace;
+    color: #00ff88;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.container {
+    background-color: #111;
+    border: 2px solid #00ff88;
+    padding: 30px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff88;
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* Animación glow */
+@keyframes neonGlow {
+    from { box-shadow: 0 0 10px #00ff88; }
+    to   { box-shadow: 0 0 20px #00ff88; }
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #00ff88;
+    margin-bottom: 25px;
+}
+
+/* Etiquetas */
+label {
+    font-size: 14px;
+    color: #00ff88;
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d0d0d;
+    border: 1px solid #00ff88;
+    border-radius: 5px;
+    color: #00ff88;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00ffaa;
+    box-shadow: 0 0 8px #00ffaa;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00ff88;
+    color: #0d0d0d;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0d0d0d;
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    box-shadow: 0 0 10px #00ff88 inset;
+}
+
+/* Enlaces */
+a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Texto inferior */
+.text-small {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00cc66;
+    opacity: 0.8;
+}
+
