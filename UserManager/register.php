@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <script src="js/validacion.js" defer></script>
 </head>
 <body>

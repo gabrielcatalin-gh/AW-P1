@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>UseManager</title>
+    <title>UserManager</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
