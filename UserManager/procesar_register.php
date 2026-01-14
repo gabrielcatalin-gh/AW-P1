@@ -1,0 +1,35 @@
+<?php
+require "includes/db.php";
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    
+    $nombre = trim($_POST['nombre']);
+    $email = trim($_POST['email']);
+    $password = trim($_POST['password']);
+
+    // Validación básica
+    if (empty($nombre) || empty($email) || empty($password)) {
+        die("Todos los campos son obligatorios.");
+    }
+
+    // Encriptar contraseña
+    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+    // Insertar en BD
+    $sql = "INSERT INTO users (nombre, email, password) VALUES (?, ?, ?)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $nombre, $email, $passwordHash);
+
+    if ($stmt->execute()) {
+        // Guardar datos en sesión
+        $_SESSION['user_id'] = $stmt->insert_id;
+        $_SESSION['user_nombre'] = $nombre;
+        $_SESSION['user_rol'] = "user";
+
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+}
