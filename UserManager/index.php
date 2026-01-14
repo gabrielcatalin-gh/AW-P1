@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<h1>Bienvenido a UseManager</h1>
+<h1>Bienvenido a UserManager</h1>
 
 <p>Aplicación de gestión de usuarios con roles y sesiones.</p>
 
