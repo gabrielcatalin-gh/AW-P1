@@ -13,6 +13,6 @@ CREATE TABLE users (
     email VARCHAR(120) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     rol ENUM('admin','user') DEFAULT 'user',
-    edad INT VARCHAR(3) NOT NULL
+    edad INT NOT NULL
 );
 
