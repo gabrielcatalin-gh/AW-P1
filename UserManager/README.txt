@@ -27,7 +27,7 @@ USO DE LA APLICACIÓN
    Este usuario será el encargado de gestionar el resto de usuarios.
 
 2. Acceder a la aplicación desde:
-   http://localhost/UseManager/
+   http://localhost/UserManager/
 
 3. Iniciar sesión con un usuario existente.
 
