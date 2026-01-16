@@ -25,6 +25,7 @@ session_start();
 </form>
 
 <div id="erroresLogin" style="color:red;"></div>
+<a href="register.php">¿No tienes cuenta?</a>
 
 </body>
 </html>

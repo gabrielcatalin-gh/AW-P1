@@ -47,6 +47,9 @@ if (isset($_GET['id'])) {
         <option value="admin" <?php echo $usuario['rol'] === 'admin' ? 'selected' : ''; ?>>Administrador</option>
     </select><br>
 
+    <label>Edad</label>
+    <input type="number" name="edad" value="<?= $user['edad'] ?>" min="0" max="120">
+
     <button type="submit">Actualizar Usuario</button>
 </form>
 

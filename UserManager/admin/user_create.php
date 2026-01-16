@@ -30,6 +30,9 @@ require_admin(); // Solo admin puede ver esta página
         <option value="admin">Administrador</option>
     </select><br>
 
+    <label>Edad:</label>
+    <input type="number" name="edad" required>
+
     <button type="submit">Crear Usuario</button>
 </form>
 

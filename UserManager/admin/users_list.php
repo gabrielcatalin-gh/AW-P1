@@ -26,6 +26,7 @@ $resultado = $conn->query($sql);
         <th>Nombre</th>
         <th>Email</th>
         <th>Rol</th>
+        <th>Edad</th>
         <th>Acciones</th>
     </tr>
 
@@ -35,6 +36,7 @@ $resultado = $conn->query($sql);
             <td><?php echo htmlspecialchars($usuario['nombre']); ?></td>
             <td><?php echo htmlspecialchars($usuario['email']); ?></td>
             <td><?php echo htmlspecialchars($usuario['rol']); ?></td>
+            <td><?php echo htmlspecialchars($usuario['edad']); ?></td>
             <td>
                 <a href="user_edit.php?id=<?php echo $usuario['id']; ?>">Editar</a> | 
                 <a href="user_delete.php?id=<?php echo $usuario['id']; ?>" onclick="return confirm('¿Estás seguro de eliminar este usuario?');">Eliminar</a>

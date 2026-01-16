@@ -25,10 +25,15 @@ session_start();
     <label>Contraseña:</label>
     <input type="password" name="password" id="password">
 
+    <label>Edad</label>
+    <input type="number" name="edad" id="edad">
+
+
     <button type="submit">Registrarse</button>
 </form>
 
 <div id="errores" style="color:red;"></div>
+<a href="login.php">¿Ya tienes cuenta?</a>
 
 </body>
 </html>
