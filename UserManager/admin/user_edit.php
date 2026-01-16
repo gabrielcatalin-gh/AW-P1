@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
     </select><br>
 
     <label>Edad</label>
-    <input type="number" name="edad" value="<?= $user['edad'] ?>" min="0" max="120">
+    <input type="text" name="edad" value="<?php echo htmlspecialchars($usuario['edad']); ?>" required><br>
 
     <button type="submit">Actualizar Usuario</button>
 </form>
