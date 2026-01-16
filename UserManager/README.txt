@@ -38,6 +38,6 @@ USO DE LA APLICACIÓN
 --------------------------------------------------
 AUTOR
 --------------------------------------------------
-Nombre del alumno: Gabriel
+Nombre del alumno: Gabriel Catalin Voicu
 Ciclo: Grado Medio SMR
 Asignatura: Aplicaciones Web
